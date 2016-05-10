@@ -11,7 +11,7 @@ def test_zigzag_scan():
                               [20, 22, 33, 38, 46, 51, 55, 60],
                               [21, 34, 37, 47, 50, 56, 59, 61],
                               [35, 36, 48, 49, 57, 58, 62, 63]])
-    n_values = len(zigzag_matrix)
+    n_values = zigzag_matrix.size
     res = zigzag_scan(zigzag_matrix, n_values)
     true_res = np.arange(n_values)
     assert_array_equal(res, true_res)
